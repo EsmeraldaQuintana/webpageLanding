@@ -1,5 +1,7 @@
+# files:
 readme.private
 
+# folders:
 dist
-
+node_modules
 

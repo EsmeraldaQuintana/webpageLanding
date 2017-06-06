@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "devDependencies": {
+        "buble": "^0.15.2",
+        "rollup": "^0.42.0"
+    },
+    "scripts": {
+        "start": "rollup ./src/main.js --format iife --output ./dist/bundle.js"
+    }
+}

@@ -26,6 +26,10 @@
         "clean": "del dist"
     },
     "eslintConfig": {
+      "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+      },
         "extends": "google",
         "env": {
             "browser": true

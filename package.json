@@ -20,8 +20,8 @@
         "preserve": "npm run build",
         "serve": "browser-sync start --server 'dist' --files 'dist' --reload-delay 100",
         "start": "npm run lint:watch & npm run build:watch & npm run serve",
-
-        "build": "node tasks/build.js",
+        "build:js": "rollup src/scripts/main.js --format iife --output dist/bundle.js",
+        "build": "npm run build:js; copy 'src/*.html' dist",
         "build:watch": "watch 'npm run build' src"
     },
     "eslintConfig": {

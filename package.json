@@ -3,6 +3,7 @@
     "devDependencies": {
         "browser-sync": "^2.18.12",
         "copy": "^0.3.0",
+        "del-cli": "^1.0.0",
         "eslint": "^3.19.0",
         "eslint-config-google": "^0.8.0",
         "rollup": "^0.42.0",
@@ -14,15 +15,15 @@
     "scripts": {
         "lint:js": "eslint \"src/**/*.js\"; exit 0",
         "lint:css": "stylelint \"src/**/*.css\"; exit 0",
-
         "lint": "npm run lint:js & npm run lint:css",
         "lint:watch": "watch 'npm run lint' src",
         "preserve": "npm run build",
-        "serve": "browser-sync start --server 'dist' --files 'dist' --reload-delay 100",
+        "serve": "browser-sync start --server 'dist' --files 'dist' --reload-delay 1000",
         "start": "npm run lint:watch & npm run build:watch & npm run serve",
         "build:js": "rollup src/scripts/main.js --format iife --output dist/bundle.js",
-        "build": "npm run build:js; copy 'src/*.html' dist",
-        "build:watch": "watch 'npm run build' src"
+        "build": "npm run clean && npm run build:js && copy 'src/*.html' dist",
+        "build:watch": "watch 'npm run build' src",
+        "clean": "del dist"
     },
     "eslintConfig": {
         "extends": "google",

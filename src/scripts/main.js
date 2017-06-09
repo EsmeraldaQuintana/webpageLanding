@@ -10,3 +10,15 @@
 // if it exists keep it OK  YES YES YES ok YES
 // app = window.app which is window.app or an empty object
 //
+
+import Router from './Router';
+
+Router.register('foo', () => { console.log('foo'); });
+Router.register('bar', () => { console.log('bar'); });
+console.log(Router.routes);
+
+Router.unregister('foo');
+console.log(Router.routes);
+
+Router.unregister('bar');
+console.log(Router.routes);

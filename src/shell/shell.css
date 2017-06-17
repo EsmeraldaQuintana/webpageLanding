@@ -32,6 +32,13 @@ Shell[
 
 }
 
-.Shell_contents{
+.Shell__contents{
+    border: solid 1px black;
+}
+
+.Shell__footer{
+    display:block;
+    border: solid 1px pink;
+    text-align: center;
 
 }

@@ -16,7 +16,9 @@ const htmlStr = `
         <div class="Shell__contents">
             <!-- Content goes here. -->
         </div>
-        <p>End of shell!</p>
+        <footer class="Shell__footer">
+        <p>Party in the footer, woo~ </p>
+        </footer>
     </div>`;
 
 /**

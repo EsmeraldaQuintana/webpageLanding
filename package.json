@@ -40,7 +40,7 @@
     "extends": "stylelint-config-standard",
     "rules": {
       "block-no-empty": null,
-      "indentation": "tab"
+      "indentation": 4
     }
   },
   "dependencies": {

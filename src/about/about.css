@@ -1,0 +1,9 @@
+body {
+    /* background-image: url('big-wallpaper.jpeg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home {
+    color: green;
+}

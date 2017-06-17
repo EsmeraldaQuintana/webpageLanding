@@ -1,0 +1,37 @@
+/* class Shell
+Shell[
+    Shell__header[
+        Shell__title[
+            Shell_nav[]
+        ]
+    ]
+    Shell__contents[]
+]
+*/
+
+.Shell {
+
+}
+
+.Shell__header{
+    border:solid 1px black;
+    display: flex;
+    align-items: center;
+}
+
+.Shell__title{
+    border:solid 1px red;
+    justify-content: left;
+
+}
+
+.Shell__nav{
+    border:solid 1px blue;
+    flex-grow: 1;
+    text-align: right;
+
+}
+
+.Shell_contents{
+
+}

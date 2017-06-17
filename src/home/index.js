@@ -1,6 +1,12 @@
 import './home.css';
 // import modulesImg from './modules.svg';
 
+const htmlStr = `
+    <div class="Home">
+        <h1>Home</h1>
+        <p>HOME HOME HOME</p>
+    </div>`;
+
 let container;
 
 const home = {
@@ -22,9 +28,7 @@ function setContainer(c) {
  * <!--<img src="${modulesImg}"`;-->
  */
 function render() {
-	container.innerHTML = `
-		<h1 class="home">Home</h1>
-        <p>HOME HOME HOME</p>`;
+	container.innerHTML = htmlStr;
 }
 
 export default home;

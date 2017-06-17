@@ -1,6 +1,12 @@
 import './about.css';
 // import modulesImg from './modules.svg';
 
+const htmlStr = `
+    <div class="About">
+        <h1>About</h1>
+        <p>ABOUT ABOUT ABOUT</p>
+    </div>`;
+
 let container;
 
 const about = {
@@ -22,9 +28,7 @@ function setContainer(c) {
  * <!--<img src="${modulesImg}"`;-->
  */
 function render() {
-	container.innerHTML = `
-		<h1 class="home">About</h1>
-        <p>ABOUT ABOUT ABOUT</p>`;
+	container.innerHTML = htmlStr;
 }
 
 export default about;

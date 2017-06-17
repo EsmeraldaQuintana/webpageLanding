@@ -1,6 +1,12 @@
 import './blog.css';
 // import modulesImg from './modules.svg';
 
+const htmlStr = `
+    <div class="Blog">
+        <h1>Blog</h1>
+        <p>BLOG BLOG BLOG</p>
+    </div>`;
+
 let container;
 
 const blog = {
@@ -22,9 +28,7 @@ function setContainer(c) {
  * <!--<img src="${modulesImg}"`;-->
  */
 function render() {
-	container.innerHTML = `
-		<h1 class="blog">Blog</h1>
-        <p>BLOG BLOG BLOG</p>`;
+	container.innerHTML = htmlStr;
 }
 
 export default blog;

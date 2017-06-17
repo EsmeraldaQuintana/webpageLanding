@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
+    "css-loader": "^0.28.4",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.8.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.28.0",
+    "stylelint": "^7.11.0",
+    "stylelint-config-standard": "^16.0.0",
+    "watch": "^1.0.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "lint:js": "eslint 'src/**/*.js'; exit 0",
+    "lint:css": "stylelint 'src/**/*.css'; exit 0",
+    "lint": "npm run lint:js & npm run lint:css",
+    "lint:watch": "watch 'npm run lint' src --wait=1",
+    "prebuild": "test ! -d dist || rm -r dist; mkdir dist",
+    "build": "cp -r public/* dist; rm dist/index.template.html && webpack -p",
+    "serve": "webpack-dev-server",
+    "start": "npm run lint:watch & npm run serve"
+  },
+  "eslintConfig": {
+    "extends": "google",
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "block-no-empty": null,
+      "indentation": "tab"
+    }
+  }
+}

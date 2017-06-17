@@ -1,5 +1,5 @@
 import './about.css';
-import modulesImg from './modules.svg';
+// import modulesImg from './modules.svg';
 
 const about = {
 	render,
@@ -7,11 +7,12 @@ const about = {
 
 /**
  * Renders the about component.
+ * <!--<img src="${modulesImg}"`;-->
  */
 function render() {
 	document.getElementById('root').innerHTML = `
 		<h1 class="about">About</h1>
-		<img src="${modulesImg}">`;
+        <p>ABOUT ABOUT ABOUT</p>`;
 }
 
 export default about;

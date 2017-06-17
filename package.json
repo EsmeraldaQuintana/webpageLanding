@@ -42,5 +42,8 @@
       "block-no-empty": null,
       "indentation": "tab"
     }
+  },
+  "dependencies": {
+    "page": "^1.7.1"
   }
 }

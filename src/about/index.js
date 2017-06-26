@@ -1,11 +1,12 @@
+import './about.html';
 import './about.css';
 // import modulesImg from './modules.svg';
 
-const htmlStr = `
-    <div class="About">
-        <h1>About</h1>
-        <p>ABOUT ABOUT ABOUT</p>
-    </div>`;
+// const htmlStr = `
+//     <div class="About">
+//         <h1>About</h1>
+//         <p>ABOUT ABOUT ABOUT</p>
+//     </div>`;
 
 let container;
 
@@ -28,7 +29,9 @@ function setContainer(c) {
  * <!--<img src="${modulesImg}"`;-->
  */
 function render() {
-	container.innerHTML = htmlStr;
+	// container.innerHTML = htmlStr;
+    container.innerHTML = `<iframe src=\"about.html\">
+        </object>`;
 }
 
 export default about;

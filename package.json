@@ -44,6 +44,7 @@
     }
   },
   "dependencies": {
+    "html-loader": "^0.4.5",
     "page": "^1.7.1"
   }
 }

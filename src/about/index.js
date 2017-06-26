@@ -1,7 +1,7 @@
 import './about.html';
 import './about.css';
-// import modulesImg from './modules.svg';
 
+// original solution
 // const htmlStr = `
 //     <div class="About">
 //         <h1>About</h1>
@@ -29,9 +29,21 @@ function setContainer(c) {
  * <!--<img src="${modulesImg}"`;-->
  */
 function render() {
+    let xhandle = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest()
+                   : new ActiveXObject('Microsoft.XMLHTTP');
+    xhandle.open('get', 'about.html', true);
+    xhandle.onreadystatechange = function() {
+        if (xhandle.readyState == 4 && xhandle.status == 200) {
+            container.innerHTML = xhandle.responseText;
+        }
+    };
+    xhandle.send();
+    // original solution
 	// container.innerHTML = htmlStr;
-    container.innerHTML = `<iframe src=\"about.html\">
-        </object>`;
+
+    // The line below uses public/about.html
+    // container.innerHTML = `<object type="text/html" data="about.html">
+    //     </object>`;
 }
 
 export default about;

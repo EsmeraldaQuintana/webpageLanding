@@ -30,7 +30,9 @@ Shell[
 }
 
 .Shell__contents {
-    border: solid 1px black;
+    margin: auto;
+    border: solid 3px black;
+    width: 50%;
 }
 
 .Shell__footer {

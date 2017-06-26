@@ -10,33 +10,35 @@ Shell[
 */
 
 .Shell {
+    border: 3px solid red;
 }
 
 .Shell__header {
-    border: solid 1px black;
+    border: solid 2px purple;
     display: flex;
     align-items: center;
 }
 
 .Shell__title {
-    border: solid 1px red;
+    border: solid 1px blue;
     justify-content: left;
 }
 
 .Shell__nav {
-    border: solid 1px blue;
+    border: solid 1px green;
     flex-grow: 1;
     text-align: right;
 }
 
 .Shell__contents {
     margin: auto;
-    border: solid 3px black;
+    height: 78vh;
+    border: solid 3px yellow;
     width: 50%;
 }
 
 .Shell__footer {
     display: block;
-    border: solid 1px pink;
+    border: solid 1px orange;
     text-align: center;
 }

@@ -36,14 +36,13 @@ function render() {
         if (xhandle.readyState == 4 && xhandle.status == 200) {
             container.innerHTML = xhandle.responseText;
         }
-    }
+    };
     xhandle.send();
     // The line below uses public/about.html
     // container.innerHTML = `<object type="text/html" data="about.html">
     //     </object>`;
     // original solution
 	// container.innerHTML = htmlStr;
-
 }
 
 export default about;

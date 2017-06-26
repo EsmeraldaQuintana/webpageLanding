@@ -46,3 +46,20 @@ Shell[
     border: solid 1px orange;
     text-align: center;
 }
+
+/* Shell__nav breaks under 235px */
+
+/* Shell_contents becomes to small (width) under 1400 */
+
+/* Shell_contents stays at 700px then shrinks with screen size */
+@media (max-width: 1600px) {
+    .Shell__contents {
+        width: 800px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Shell__contents {
+        width: 100%;
+    }
+}

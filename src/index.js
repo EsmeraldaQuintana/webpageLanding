@@ -1,3 +1,5 @@
+import './main.css';
+
 import page from 'page';
 import shell from './shell';
 import home from './home';

@@ -1,22 +1,26 @@
 /* class Shell
 Shell[
     Shell__header[
-        Shell__title[
-            Shell_nav[]
-        ]
+        Shell__title[]
+        Shell_nav[]
     ]
     Shell__contents[]
+    Shell__footer[]
 ]
 */
 
 .Shell {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     border: 3px solid red;
 }
 
 .Shell__header {
-    border: solid 2px purple;
     display: flex;
     align-items: center;
+    width: 100%;
+    border: solid 2px purple;
 }
 
 .Shell__title {
@@ -31,8 +35,8 @@ Shell[
 }
 
 .Shell__contents {
-    margin: auto;
-    height: 78vh;
+    margin: 0 auto;
+    flex-grow: 1;
     border: solid 3px yellow;
     width: 50%;
 }

@@ -47,17 +47,54 @@ Shell[
     text-align: center;
 }
 
-/* Shell__nav breaks under 235px */
+/* RESPONSIVE DESIGN below */
 
-/* Shell_contents becomes to small (width) under 1400 */
+/* Fix Shell__header for small landscape orientation */
+@media (max-width: 600px) and (max-height: 400px) {
+    .Shell__header {
+        padding: 0;
+        margin: 0;
+        font-size: 0.7em;
+    }
 
-/* Shell_contents stays at 700px then shrinks with screen size */
+    .Shell__title {
+        margin: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+        font-size: 1em;
+    }
+
+    .Shell__footer {
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+/* Fix Shell_header for small devices */
+@media (max-width: 340px) {
+    .Shell__header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Shell__nav,
+    .Shell__title {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Fix Shell_contents to adjust to smaller width */
 @media (max-width: 1600px) {
     .Shell__contents {
         width: 800px;
     }
 }
 
+/* Fix Shell_contents to adjust to smaller width again */
 @media (max-width: 800px) {
     .Shell__contents {
         width: 100%;

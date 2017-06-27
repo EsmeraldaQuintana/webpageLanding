@@ -9,17 +9,14 @@ const about = {
 };
 
 /**
- *
  * @param {Element} c - The container element.
  */
 function setContainer(c) {
     container = c;
 }
 
-
 /**
- * Renders the about component.
- * <!--<img src="${modulesImg}"`;-->
+ * Renders the page component.
  */
 function render() {
     container.innerHTML = htmlStr;

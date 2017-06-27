@@ -19,6 +19,10 @@ footer {
     font-family: 'Droid Serif', serif;
 }
 
+h2 {
+    padding-left: 10px;
+}
+
 p {
     padding-left: 10px;
     padding-right: 10px;

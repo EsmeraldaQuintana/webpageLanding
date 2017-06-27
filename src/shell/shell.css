@@ -24,14 +24,20 @@ Shell[
 }
 
 .Shell__title {
-    border: solid 1px blue;
+    padding-left: 5px;
+
+    /* border: solid 1px blue; */
     justify-content: left;
 }
 
 .Shell__nav {
-    border: solid 1px green;
+    padding-right: 5px;
+
+    /* border: solid 1px green; */
     flex-grow: 1;
     text-align: right;
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
 }
 
 .Shell__title a,
@@ -52,7 +58,9 @@ Shell[
 
 .Shell__footer {
     display: block;
-    border: solid 1px orange;
+    font-weight: bold;
+
+    /* border: solid 1px orange; */
     text-align: center;
 }
 
@@ -79,15 +87,6 @@ Shell[
         height: 0;
         visibility: hidden;
     }
-}
-
-/* Fix Shell_header for small devices */
-@media (max-width: 340px) {
-    .Shell__header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
     .Shell__nav,
     .Shell__title {
@@ -103,9 +102,28 @@ Shell[
     }
 }
 
-/* Fix Shell_contents to adjust to smaller width again */
+/* Fix Shell_contents to adjust to even smaller width */
 @media (max-width: 800px) {
     .Shell__contents {
         width: 100%;
+    }
+
+    .Shell__nav,
+    .Shell__title {
+        padding: 0;
+    }
+}
+
+/* Fix Shell_header for smallest devices */
+@media (max-width: 340px) {
+    .Shell__header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Shell__nav,
+    .Shell__title {
+        margin: 0;
     }
 }

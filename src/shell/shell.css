@@ -34,6 +34,15 @@ Shell[
     text-align: right;
 }
 
+.Shell__title a,
+.Shell__nav a,
+.Shell__title a:visited,
+.Shell__nav a:visited,
+.Shell__title a:hover,
+.Shell__nav a:hover {
+    color: black;
+}
+
 .Shell__contents {
     margin: 0 auto;
     flex-grow: 1;

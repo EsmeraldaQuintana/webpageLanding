@@ -40,6 +40,11 @@ Shell[
     font-weight: bold;
 }
 
+.Shell__nav a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .Shell__title a,
 .Shell__nav a,
 .Shell__title a:visited,

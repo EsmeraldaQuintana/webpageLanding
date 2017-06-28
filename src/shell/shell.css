@@ -160,4 +160,8 @@ colors are cc6611 and dd8833
     .Shell__title {
         margin: 0;
     }
+
+    .Shell__nav a {
+        padding: 0 5px;
+    }
 }

@@ -13,12 +13,15 @@ body {
     height: 100vh;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    background-color: hsl(30, 10%, 94%);
+    color: hsl(0, 0%, 30%);
 }
 
 h1,
 h2,
 footer {
     font-family: 'Droid Serif', serif;
+    color: hsl(0, 100%, 50%);
 }
 
 h2 {

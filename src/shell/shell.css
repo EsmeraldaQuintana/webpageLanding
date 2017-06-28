@@ -7,32 +7,50 @@ Shell[
     Shell__contents[]
     Shell__footer[]
 ]
+
+colors are cc6611 and dd8833
 */
 
 .Shell {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    border: 3px solid red;
+
+    /* border: 3px solid red; */
 }
 
 .Shell__header {
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 20px 0 10px;
     border: solid 2px purple;
+    border-bottom: 5px solid #d83;
 }
 
 .Shell__title {
-    padding-left: 5px;
+    margin: 0;
+    padding: 0 0 0 10px;
+
+    /* padding-top: 1px; */
 
     /* border: solid 1px blue; */
     justify-content: left;
 }
 
+.Shell__title a {
+    /* background-color: orange; */
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
 .Shell__nav {
-    padding-right: 5px;
-    border: solid 1px green;
+    padding: 0 5px 0 0;
+    margin: 0;
+
+    /* padding: 15px 10px 7px 0; */
+
+    /* border: solid 1px green; */
     flex-grow: 1;
     text-align: right;
     font-family: 'Droid Serif', serif;
@@ -40,7 +58,10 @@ Shell[
 }
 
 .Shell__nav a {
-    padding: 5px;
+    /* border: solid 1px red; */
+
+    /* padding: 10px 18px 10px 18px; */
+    padding: 10px 18px;
     background-color: white;
     transition:
         background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s,

@@ -32,8 +32,7 @@ Shell[
 
 .Shell__nav {
     padding-right: 5px;
-
-    /* border: solid 1px green; */
+    border: solid 1px green;
     flex-grow: 1;
     text-align: right;
     font-family: 'Droid Serif', serif;
@@ -41,8 +40,17 @@ Shell[
 }
 
 .Shell__nav a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
+    background-color: white;
+    transition:
+        background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s,
+        border-bottom-color ease-in-out 0.25s;
+    transition-duration: 0.25s, 0.25s;
+    transition-property: background-color;
+}
+
+.Shell__nav a:hover {
+    background-color: #c5c5c5;
 }
 
 .Shell__title a,

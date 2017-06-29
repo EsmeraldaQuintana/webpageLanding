@@ -1,0 +1,6 @@
+This branch contains the first layout made for my website...
+
+Header is 100% width
+Content centered on screen, about 50%
+Small device support is complete
+Styling incomplete

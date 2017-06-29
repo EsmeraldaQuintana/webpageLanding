@@ -26,6 +26,7 @@ colors are cc6611 and dd8833
     padding: 20px 0 10px;
     border: solid 2px purple;
     border-bottom: 5px solid #d83;
+    flex-shrink: 0;
 }
 
 .Shell__title {
@@ -88,6 +89,10 @@ colors are cc6611 and dd8833
     margin: 10px auto 0;
     flex-grow: 1;
     border: solid 4px #c61;
+    border-radius: 4px;
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 10px 2px hsl(0, 0%, 80%);
     width: 50%;
 }
 
@@ -119,11 +124,6 @@ colors are cc6611 and dd8833
         -webkit-margin-before: 0;
         -webkit-margin-start: 0;
         -webkit-margin-end: 0;
-    }
-
-    .Shell__footer {
-        height: 0;
-        visibility: hidden;
     }
 
     .Shell__title {

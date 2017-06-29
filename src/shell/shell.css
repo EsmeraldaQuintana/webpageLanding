@@ -15,50 +15,36 @@ colors are cc6611 and dd8833
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: hsl(0, 30%, 80%);
     border-top: 1px solid hsl(0, 0%, 0%);
-
-    /* border: 1px solid red; */
 }
 
 .Shell__header {
+    /* border: solid 2px purple; */
     border-left: 1px solid hsl(0, 0%, 0%);
     border-right: 1px solid hsl(0, 0%, 0%);
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 80px 0 10px;
-
-    /* border: solid 2px purple; */
-
-    /* border-bottom: 5px solid #d83; */
+    padding: 120px 0 10px;
     flex-shrink: 0;
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsla(0, 0%, 20%, 0.5);
 }
 
 .Shell__title {
     margin: 0;
     padding: 0 0 0 10px;
-
-    /* padding-top: 1px; */
-
-    /* border: solid 1px blue; */
     justify-content: left;
 }
 
 .Shell__title a {
-    /* background-color: orange; */
     padding-bottom: 0;
     padding-top: 0;
 }
 
 .Shell__nav {
+    /* border: solid 1px green; */
     padding: 0 5px 0 0;
     margin: 0;
-
-    /* padding: 15px 10px 7px 0; */
-
-    /* border: solid 1px green; */
     flex-grow: 1;
     text-align: right;
     font-weight: bold;
@@ -66,8 +52,6 @@ colors are cc6611 and dd8833
 
 .Shell__nav a {
     /* border: solid 1px red; */
-
-    /* padding: 10px 18px 10px 18px; */
     padding: 10px 18px;
     background-color: default;
     transition:
@@ -98,7 +82,7 @@ colors are cc6611 and dd8833
     margin: 0;
     flex-grow: 1;
     width: 100%;
-    background-color: hsl(0, 0%, 90%);
+    background: hsla(0, 0%, 90%, 1);
 }
 
 .Shell__footer {
@@ -107,10 +91,8 @@ colors are cc6611 and dd8833
     border-bottom: 1px solid hsl(0, 0%, 0%);
     display: block;
     font-weight: bold;
-
-    /* border: solid 1px orange; */
     text-align: center;
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsla(0, 0%, 20%, 0.5);
 }
 
 .Shell__footer a img {

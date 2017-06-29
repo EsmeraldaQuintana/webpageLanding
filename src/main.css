@@ -13,7 +13,6 @@ body {
     height: 100vh;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    background-color: hsl(0, 10%, 94%);
     color: hsl(0, 0%, 30%);
     align-content: center;
     display: flex;
@@ -46,7 +45,6 @@ p {
 }
 
 .parallax {
-    /*background-color: hsl(0, 50%, 50%);*/
     background-image: url('./img/sayagata-400px.png');
     background-attachment: fixed;
     background-position: center;

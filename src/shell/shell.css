@@ -16,11 +16,13 @@ colors are cc6611 and dd8833
     flex-direction: column;
     flex-grow: 1;
     background-color: hsl(0, 30%, 80%);
-
-    /* border: 3px solid red; */
+    border-top: 1px solid hsl(0, 0%, 0%);
+    /* border: 1px solid red; */
 }
 
 .Shell__header {
+    border-left: 1px solid hsl(0, 0%, 0%);
+    border-right: 1px solid hsl(0, 0%, 0%);
     display: flex;
     align-items: center;
     width: 100%;
@@ -29,7 +31,6 @@ colors are cc6611 and dd8833
     /* border: solid 2px purple; */
 
     /* border-bottom: 5px solid #d83; */
-    border-radius: 2px;
     flex-shrink: 0;
     background-color: hsl(0, 0%, 80%);
 }
@@ -54,8 +55,8 @@ colors are cc6611 and dd8833
     padding: 0 5px 0 0;
     margin: 0;
 
-    /* padding: 15px 10px 7px 0; */
 
+    /* padding: 15px 10px 7px 0; */
     /* border: solid 1px green; */
     flex-grow: 1;
     text-align: right;
@@ -91,14 +92,18 @@ colors are cc6611 and dd8833
 }
 
 .Shell__contents {
+    border-left: 1px solid hsl(0, 0%, 0%);
+    border-right: 1px solid hsl(0, 0%, 0%);
     margin: 0;
     flex-grow: 1;
-    border: solid 2px #ccc;
     width: 100%;
     background-color: hsl(0, 0%, 90%);
 }
 
 .Shell__footer {
+    border-left: 1px solid hsl(0, 0%, 0%);
+    border-right: 1px solid hsl(0, 0%, 0%);
+    border-bottom: 1px solid hsl(0, 0%, 0%);
     display: block;
     font-weight: bold;
 

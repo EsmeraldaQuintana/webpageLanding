@@ -39,6 +39,7 @@ colors are cc6611 and dd8833
 .Shell__title a {
     padding-bottom: 0;
     padding-top: 0;
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 .Shell__nav {
@@ -61,6 +62,7 @@ colors are cc6611 and dd8833
     transition-property: background-color;
     font-family: 'Oxygen', sans-serif;
     font-size: 20px;
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 .Shell__nav a:hover {

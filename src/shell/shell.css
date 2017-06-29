@@ -53,7 +53,6 @@ colors are cc6611 and dd8833
     /* border: solid 1px green; */
     flex-grow: 1;
     text-align: right;
-    font-family: 'Droid Serif', serif;
     font-weight: bold;
 }
 
@@ -68,6 +67,8 @@ colors are cc6611 and dd8833
         border-bottom-color ease-in-out 0.25s;
     transition-duration: 0.25s, 0.25s;
     transition-property: background-color;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
 }
 
 .Shell__nav a:hover {
@@ -105,7 +106,7 @@ colors are cc6611 and dd8833
     .Shell__header {
         padding: 0;
         margin: 0;
-        font-size: 0.7em;
+        font-size: 10px;
     }
 
     .Shell__title {
@@ -114,7 +115,6 @@ colors are cc6611 and dd8833
         -webkit-margin-before: 0;
         -webkit-margin-start: 0;
         -webkit-margin-end: 0;
-        font-size: 1em;
     }
 
     .Shell__footer {
@@ -122,10 +122,18 @@ colors are cc6611 and dd8833
         visibility: hidden;
     }
 
-    .Shell__nav,
     .Shell__title {
-        padding: 0;
         margin: 0;
+        padding-left: 10px;
+    }
+
+    .Shell__nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .Shell__nav a {
+        padding: 0 10px;
     }
 }
 
@@ -144,7 +152,7 @@ colors are cc6611 and dd8833
 
     .Shell__nav,
     .Shell__title {
-        padding: 0;
+        /* padding: 0; */
     }
 }
 
@@ -154,14 +162,30 @@ colors are cc6611 and dd8833
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 5px 0;
     }
 
     .Shell__nav,
     .Shell__title {
         margin: 0;
+        padding: 0;
+    }
+
+    .Shell__title a {
+        font-size: 18px;
+    }
+
+    .Shell__title h1 {
+        padding: 0;
+        margin: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
     }
 
     .Shell__nav a {
         padding: 0 5px;
+        font-size: 14px;
     }
 }

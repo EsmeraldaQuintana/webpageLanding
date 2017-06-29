@@ -20,8 +20,8 @@ body {
 h1,
 h2,
 footer {
-    font-family: 'Droid Serif', serif;
-    color: hsl(0, 100%, 50%);
+    font-family: 'Oxygen', sans-serif;
+    color: hsl(0, 0%, 0%);
 }
 
 h2 {

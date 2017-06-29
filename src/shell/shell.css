@@ -85,9 +85,9 @@ colors are cc6611 and dd8833
 }
 
 .Shell__contents {
-    margin: 0 auto;
+    margin: 10px auto 0;
     flex-grow: 1;
-    border: solid 3px yellow;
+    border: solid 4px #c61;
     width: 50%;
 }
 

@@ -99,6 +99,10 @@ colors are cc6611 and dd8833
     text-align: center;
 }
 
+.Shell__footer a img {
+    padding: 6px 5px;
+}
+
 /* RESPONSIVE DESIGN below */
 
 /* Fix Shell__header for small landscape orientation */

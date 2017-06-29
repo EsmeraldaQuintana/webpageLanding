@@ -17,6 +17,7 @@ colors are cc6611 and dd8833
     flex-grow: 1;
     background-color: hsl(0, 30%, 80%);
     border-top: 1px solid hsl(0, 0%, 0%);
+
     /* border: 1px solid red; */
 }
 
@@ -55,8 +56,8 @@ colors are cc6611 and dd8833
     padding: 0 5px 0 0;
     margin: 0;
 
-
     /* padding: 15px 10px 7px 0; */
+
     /* border: solid 1px green; */
     flex-grow: 1;
     text-align: right;

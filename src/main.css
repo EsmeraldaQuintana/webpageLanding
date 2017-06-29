@@ -44,3 +44,12 @@ p {
     margin: 10px auto;
     width: 1000px;
 }
+
+.parallax {
+    /*background-color: hsl(0, 50%, 50%);*/
+    background-image: url('./img/sayagata-400px.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+}

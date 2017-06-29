@@ -14,7 +14,8 @@ colors are cc6611 and dd8833
 .Shell {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    flex-grow: 1;
+    background-color: hsl(0, 30%, 80%);
 
     /* border: 3px solid red; */
 }
@@ -24,13 +25,13 @@ colors are cc6611 and dd8833
     align-items: center;
     width: 100%;
     padding: 80px 0 10px;
-    border: solid 2px purple;
-    border-bottom: 5px solid #d83;
+
+    /* border: solid 2px purple; */
+
+    /* border-bottom: 5px solid #d83; */
     border-radius: 2px;
     flex-shrink: 0;
-
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 2px 2px 10px 2px hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 80%);
 }
 
 .Shell__title {
@@ -90,14 +91,11 @@ colors are cc6611 and dd8833
 }
 
 .Shell__contents {
-    margin: 10px auto 0;
+    margin: 0;
     flex-grow: 1;
-    border: solid 4px #c61;
-    border-radius: 4px;
+    border: solid 2px #ccc;
     width: 100%;
-
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 2px 2px 10px 2px hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 90%);
 }
 
 .Shell__footer {
@@ -106,6 +104,7 @@ colors are cc6611 and dd8833
 
     /* border: solid 1px orange; */
     text-align: center;
+    background-color: hsl(0, 0%, 80%);
 }
 
 .Shell__footer a img {
@@ -116,7 +115,7 @@ colors are cc6611 and dd8833
 
 /* Fix Shell__header for small landscape orientation */
 @media (max-width: 600px) and (max-height: 400px) {
-    .Shell__header {
+    /* .Shell__header {
         padding: 0;
         margin: 0;
         font-size: 10px;
@@ -142,58 +141,19 @@ colors are cc6611 and dd8833
 
     .Shell__nav a {
         padding: 0 10px;
-    }
+    } */
 }
 
 /* Fix Shell_contents to adjust to smaller width */
 @media (max-width: 1600px) {
-    .Shell__contents {
-        width: 800px;
-    }
+
 }
 
 /* Fix Shell_contents to adjust to even smaller width */
 @media (max-width: 800px) {
-    .Shell__contents {
-        width: 100%;
-    }
 
-    .Shell__nav,
-    .Shell__title {
-        /* padding: 0; */
-    }
 }
 
 /* Fix Shell_header for smallest devices */
 @media (max-width: 340px) {
-    .Shell__header {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 0;
-    }
-
-    .Shell__nav,
-    .Shell__title {
-        margin: 0;
-        padding: 0;
-    }
-
-    .Shell__title a {
-        font-size: 18px;
-    }
-
-    .Shell__title h1 {
-        padding: 0;
-        margin: 0;
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
-        -webkit-margin-start: 0;
-        -webkit-margin-end: 0;
-    }
-
-    .Shell__nav a {
-        padding: 0 5px;
-        font-size: 14px;
-    }
 }

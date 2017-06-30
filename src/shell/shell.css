@@ -13,7 +13,7 @@ colors are cc6611 and dd8833
 
 .Shell {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-grow: 1;
     border-top: 1px solid hsl(0, 0%, 0%);
 }
@@ -23,8 +23,8 @@ colors are cc6611 and dd8833
     border-left: 1px solid hsl(0, 0%, 0%);
     border-right: 1px solid hsl(0, 0%, 0%);
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 200px;
     padding: 0;
     flex-shrink: 0;
     background-color: hsla(0, 0%, 20%, 0.5);

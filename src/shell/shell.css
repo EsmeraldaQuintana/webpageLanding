@@ -23,10 +23,11 @@ colors are cc6611 and dd8833
     margin: 0;
     flex-grow: 1;
     width: 800px;
+    height: 100%;
 }
 
 .Shell__header {
-    background-color: hsl(0, 50%, 70%);
+    background-color: hsla(0, 0%, 50%, 0.5);
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -37,26 +38,22 @@ colors are cc6611 and dd8833
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(0, 0%, 80%);
 }
 
 .Shell__face img {
     border: 10px solid black;
     border-radius: 50%;
-    background-color: hsl(0, 0%, 90%);
     width: 200px;
     margin: 80px auto 50px;
 }
 
 .Shell__banner {
-    background-color: hsl(0, 0%, 70%);
     display: flex;
     flex-direction: column;
 }
 
-.Shell__title{
+.Shell__title {
     font-family: 'Oxygen', sans-serif;
-    background-color: hsl(0, 0%, 80%);
     margin: 0 auto;
     font-weight: bold;
     font-size: 40px;
@@ -65,7 +62,6 @@ colors are cc6611 and dd8833
 
 .Shell__banner p {
     margin: 5px auto;
-    background-color: hsl(0, 0%, 90%);
     font-size: 20px;
     font-style: italic;
 }
@@ -73,12 +69,11 @@ colors are cc6611 and dd8833
 .Shell__icons {
     padding-left: 0;
     display: flex;
-    flex-grow: 1;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 .Shell__icons a {
-    padding: 0 5px 10px;
 }
 
 .Shell__icons a img {
@@ -86,8 +81,9 @@ colors are cc6611 and dd8833
 }
 
 .Shell__nav {
-    background-color: hsl(0, 0%, 80%);
-    padding: 0 5px 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
     margin: 0;
     font-weight: bold;
 }
@@ -118,7 +114,6 @@ colors are cc6611 and dd8833
 .Shell__nav a:hover {
     color: hsl(0, 0%, 20%);
 }
-
 
 /* RESPONSIVE DESIGN below */
 

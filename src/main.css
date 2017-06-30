@@ -12,7 +12,6 @@ body {
     margin: 0;
     height: 100vh;
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
     color: hsl(0, 0%, 30%);
     align-content: center;
     display: flex;

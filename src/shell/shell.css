@@ -15,53 +15,62 @@ colors are cc6611 and dd8833
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    border-top: 1px solid hsl(0, 0%, 0%);
+    background-color: hsl(270, 50%, 90%);
+}
+
+.Shell__contents {
+    background-color: hsl(0, 0%, 60%);
+    margin: 0;
+    flex-grow: 1;
+    width: 800px;
 }
 
 .Shell__header {
-    border: solid 2px purple;
+    background-color: hsl(0, 50%, 70%);
     display: flex;
     flex-direction: column;
     width: 300px;
     padding: 0;
-    background-color: hsla(0, 0%, 20%, 0.5);
 }
 
 .Shell__face {
-    border: 1px solid red;
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 80%);
 }
 
 .Shell__face img {
-    width: 100px;
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 90%);
+    width: 200px;
+    margin: 80px auto 50px;
 }
 
-.Shell__title {
-    border: 1px solid orange;
-    margin: 0;
-    padding: 0;
-}
-
-.Shell__title a {
-    font-size: 50px;
-    padding-bottom: 0;
-    padding-top: 0;
-    text-shadow: 1px 1px 1px #ccc;
-}
-
-.Shell__words {
-    border: 4px solid yellow;
+.Shell__banner {
+    background-color: hsl(0, 0%, 70%);
     display: flex;
     flex-direction: column;
 }
 
-.Shell__words p {
-    font-size: 16px;
+.Shell__title{
+    font-family: 'Oxygen', sans-serif;
+    background-color: hsl(0, 0%, 80%);
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.Shell__banner p {
+    margin: 5px auto;
+    background-color: hsl(0, 0%, 90%);
+    font-size: 20px;
     font-style: italic;
 }
 
 .Shell__icons {
-    border: 1px solid orange;
     padding-left: 0;
     display: flex;
     flex-grow: 1;
@@ -77,11 +86,10 @@ colors are cc6611 and dd8833
 }
 
 .Shell__nav {
-    border: solid 1px red;
+    background-color: hsl(0, 0%, 80%);
     padding: 0 5px 0 0;
     margin: 0;
     font-weight: bold;
-    flex-grow: 1;
 }
 
 .Shell__nav a {
@@ -111,28 +119,6 @@ colors are cc6611 and dd8833
     color: hsl(0, 0%, 20%);
 }
 
-.Shell__contents {
-    border-left: 1px solid hsl(0, 0%, 0%);
-    border-right: 1px solid hsl(0, 0%, 0%);
-    margin: 0;
-    flex-grow: 1;
-    width: 800px;
-    background: hsla(0, 0%, 90%, 1);
-}
-
-.Shell__footer {
-    border-left: 1px solid hsl(0, 0%, 0%);
-    border-right: 1px solid hsl(0, 0%, 0%);
-    border-bottom: 1px solid hsl(0, 0%, 0%);
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    background-color: hsla(0, 0%, 20%, 0.5);
-}
-
-.Shell__footer a img {
-    padding: 6px 5px;
-}
 
 /* RESPONSIVE DESIGN below */
 

@@ -60,11 +60,14 @@ colors are cc6611 and dd8833
 }
 
 .Shell__icons {
-    padding-left: 10px;
+    padding-left: 0;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
 }
 
 .Shell__icons a {
-    padding: 2px;
+    padding: 0 5px 10px;
 }
 
 .Shell__icons a img {

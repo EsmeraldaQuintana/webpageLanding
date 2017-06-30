@@ -23,20 +23,31 @@ colors are cc6611 and dd8833
     border-left: 1px solid hsl(0, 0%, 0%);
     border-right: 1px solid hsl(0, 0%, 0%);
     display: flex;
-    align-items: center;
+    flex-direction: row;
     width: 100%;
-    padding: 120px 0 10px;
+    padding: 0;
     flex-shrink: 0;
     background-color: hsla(0, 0%, 20%, 0.5);
+}
+
+.Shell__banner {
+
+}
+
+.Shell__face {
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: 10px;
 }
 
 .Shell__title {
     margin: 0;
     padding: 0 0 0 10px;
-    justify-content: left;
 }
 
 .Shell__title a {
+    font-size: 80px;
     padding-bottom: 0;
     padding-top: 0;
     text-shadow: 1px 1px 1px #ccc;
@@ -46,14 +57,16 @@ colors are cc6611 and dd8833
     /* border: solid 1px green; */
     padding: 0 5px 0 0;
     margin: 0;
-    flex-grow: 1;
-    text-align: right;
     font-weight: bold;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .Shell__nav a {
     /* border: solid 1px red; */
-    padding: 10px 18px;
+    padding: 4px;
     background-color: default;
     transition:
         background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s,

@@ -30,10 +30,6 @@ colors are cc6611 and dd8833
     background-color: hsla(0, 0%, 20%, 0.5);
 }
 
-.Shell__banner {
-
-}
-
 .Shell__face {
     height: 200px;
     border: 1px solid black;
@@ -41,9 +37,14 @@ colors are cc6611 and dd8833
     margin: 10px;
 }
 
+.Shell__words {
+    display: flex;
+    flex-direction: column;
+}
+
 .Shell__title {
     margin: 0;
-    padding: 0 0 0 10px;
+    padding: 0;
 }
 
 .Shell__title a {
@@ -51,6 +52,23 @@ colors are cc6611 and dd8833
     padding-bottom: 0;
     padding-top: 0;
     text-shadow: 1px 1px 1px #ccc;
+}
+
+.Shell__words p {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.Shell__icons {
+    padding-left: 10px;
+}
+
+.Shell__icons a {
+    padding: 2px;
+}
+
+.Shell__icons a img {
+    height: 20px;
 }
 
 .Shell__nav {

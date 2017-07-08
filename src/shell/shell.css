@@ -1,96 +1,72 @@
-/* class Shell
-Shell[
-    Shell__header[
-        Shell__title[]
-        Shell_nav[]
-    ]
-    Shell__contents[]
-    Shell__footer[]
-]
-
-colors are cc6611 and dd8833
-*/
 
 .Shell {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    width: 1100px;
+    height: auto;
+    position: relative;
 }
 
 .Shell__contents {
-    margin: 0;
-    width: 800px;
+    background-color: hsla(0, 0%, 85%, 0.4);
+    border-left: 2px solid hsl(0, 0%, 70%);
+    max-width: 750px;
+    min-height: 100vh;
     height: auto;
-    background-color: hsl(170, 100%, 50%);
-    display: flex;
-    flex-grow: 1;
-    padding: 20px;
+    margin: 0;
+    padding: 50px;
 }
 
-.Shell__header__container {
-    background-color: hsl(0, 100%, 50%);
+.Shell__sidebar {
+    padding: 0;
+    margin: 0;
+    background-color: hsla(0, 0%, 85%, 0.7);
+    border-left: 2px solid hsl(0, 0%, 70%);
+    border-right: 2px solid hsl(0, 0%, 70%);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    max-width: 250px;
+    height: 100vh;
+    right: calc(50% - 500px);
+    top: 0;
+    bottom: 0;
 }
 
 .Shell__header {
-    background-color: hsla(30, 100%, 50%);
     display: flex;
     flex-direction: column;
-    width: 300px;
-    padding: 0;
-    height: 100vh;
 }
 
-.Shell__face {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Shell__face img {
+/* Picture of face. */
+.Shell__header img {
+    margin: 80px auto 30px;
     border: 10px solid black;
     border-radius: 50%;
     width: 200px;
-    margin: 80px auto 50px;
+    height: 200px;
 }
 
-.Shell__banner {
-    display: flex;
-    flex-direction: column;
-}
-
-.Shell__title {
+/* Link to home page. */
+.Shell__header a {
     font-family: 'Oxygen', sans-serif;
-    margin: 0 auto;
     font-weight: bold;
     font-size: 40px;
     text-shadow: 1px 1px 1px #ccc;
+    margin: 0 auto;
 }
 
-.Shell__banner p {
-    margin: 5px auto;
+/* Slogan thing? */
+.Shell__sidebar p {
+    text-align: center;
     font-size: 20px;
     font-style: italic;
-}
-
-.Shell__icons {
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Shell__icons a {
-}
-
-.Shell__icons a img {
-    height: 20px;
+    margin: 20px auto;
 }
 
 .Shell__nav {
     display: flex;
     justify-content: center;
-    padding: 0;
-    margin: 0;
     font-weight: bold;
 }
 
@@ -119,6 +95,21 @@ colors are cc6611 and dd8833
 .Shell__title a:hover,
 .Shell__nav a:hover {
     color: hsl(0, 0%, 20%);
+}
+
+.Shell__icons {
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Shell__icons a {
+    padding: 5px;
+}
+
+.Shell__icons a img {
+    height: 32px;
 }
 
 /* RESPONSIVE DESIGN below */

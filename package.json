@@ -23,7 +23,7 @@
     "lint:css": "stylelint 'src/**/*.css'; exit 0",
     "lint": "npm run lint:js & npm run lint:css",
     "lint:watch": "watch 'npm run lint' src --wait=1",
-    "prebuild": "test ! -d dist || rm -r dist; mkdir dist",
+    "prebuild": "test ! -d dist || rm -rf dist; mkdir dist",
     "build": "cp -r public/* dist; rm dist/index.template.html && webpack -p",
     "serve": "webpack-dev-server",
     "start": "npm run lint:watch & npm run serve",

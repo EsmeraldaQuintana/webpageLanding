@@ -8,8 +8,8 @@
 }
 
 .Shell__contents {
-    background-color: hsla(0, 0%, 85%, 0.4);
-    border-left: 2px solid hsl(0, 0%, 70%);
+    background-color: hsla(0, 0%, 96%, .5);
+    border-left: 1px solid hsl(0, 0%, 70%);
     max-width: 750px;
     min-height: 100vh;
     height: auto;
@@ -18,11 +18,11 @@
 }
 
 .Shell__sidebar {
+    background-color: hsla(20, 60%, 50%, .3);
+    border-left: 1px solid hsl(0, 0%, 70%);
+    border-right: 1px solid hsl(0, 0%, 70%);
     padding: 0;
     margin: 0;
-    background-color: hsla(0, 0%, 85%, 0.7);
-    border-left: 2px solid hsl(0, 0%, 70%);
-    border-right: 2px solid hsl(0, 0%, 70%);
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -54,6 +54,12 @@
     font-size: 40px;
     text-shadow: 1px 1px 1px #ccc;
     margin: 0 auto;
+}
+
+.Shell__header a,
+.Shell__header a:visited,
+.Shell__header a:hover {
+    color: hsl(0, 0%, 0%);
 }
 
 /* Slogan thing? */

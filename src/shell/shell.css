@@ -16,6 +16,7 @@
     margin: 0;
     padding: 50px;
     box-shadow: -2px 2px 10px 1px hsl(0, 0%, 30%);
+    font-family: 'Lora', serif;
 }
 
 .Shell__sidebar {

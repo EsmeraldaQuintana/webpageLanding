@@ -8,8 +8,8 @@
 }
 
 .Shell__contents {
-    background-color: hsla(0, 0%, 100%, .9);
-    border-left: 1px solid hsl(0, 0%, 50%);
+    background-color: hsla(0, 0%, 100%, 0.9);
+    border-left: 1px solid hsl(0, 0%, 0%);
     max-width: 750px;
     min-height: 100vh;
     height: auto;
@@ -21,9 +21,9 @@
 }
 
 .Shell__sidebar {
-    background-color: hsla(25, 50%, 80%, .8);
-    border-left: 1px solid hsl(0, 0%, 50%);
-    border-right: 1px solid hsl(0, 0%, 50%);
+    background-color: hsla(25, 50%, 100%, 0.9);
+    border-left: 1px solid hsl(0, 0%, 0%);
+    border-right: 1px solid hsl(0, 0%, 0%);
     padding: 0;
     margin: 0;
     display: flex;
@@ -34,6 +34,7 @@
     right: calc(50% - 500px);
     top: 0;
     bottom: 0;
+    
     /* box-shadow: 2px 2px 10px 1px hsl(0, 0%, 30%); */
 }
 
@@ -95,7 +96,8 @@
 }
 
 .Shell__nav a:hover {
-    background-color: #c5c5c5;
+    /* background-color: #c5c5c5; */
+    background-color: hsla(25, 100%, 50%, 0.3);
 }
 
 .Shell__title a,

@@ -34,7 +34,7 @@
     right: calc(50% - 500px);
     top: 0;
     bottom: 0;
-    
+
     /* box-shadow: 2px 2px 10px 1px hsl(0, 0%, 30%); */
 }
 
@@ -46,10 +46,9 @@
 /* Picture of face. */
 .Shell__header img {
     margin: 80px auto 30px;
-    border: 10px solid black;
+    border: 3px solid black;
     border-radius: 50%;
     width: 200px;
-    height: 200px;
 }
 
 /* Link to home page. */
@@ -83,12 +82,14 @@
 
 .Shell__nav a {
     /* border: solid 1px red; */
-    padding: 4px;
+    padding: 2px;
     background-color: default;
+    margin: 0 5px;
     transition:
-        background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s,
-        border-bottom-color ease-in-out 0.25s;
-    transition-duration: 0.25s, 0.25s;
+        background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+        /*text-decoration-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,*/
+        /* border-bottom-color ease-in-out 0.25s; */
+    transition-duration: 1s, 10s;
     transition-property: background-color;
     font-family: 'Oxygen', sans-serif;
     font-size: 20px;

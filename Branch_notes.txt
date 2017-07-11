@@ -1,0 +1,1 @@
+This layout has the web content centered with a left fixed sidebar!

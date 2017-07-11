@@ -1,12 +1,13 @@
 
 .Shell {
+    background-color: hsla(0, 0%, 100%, 0.5);
+    min-width: 100vw;
     padding: 0;
     margin: 0;
     height: auto;
 }
 
 .Shell__contents {
-    background-color: hsla(0, 0%, 100%, 0.9);
     border-left: 1px solid hsl(0, 0%, 0%);
     min-width: 1000px;
     max-width: calc(100vw - 280px);

@@ -20,21 +20,19 @@
 }
 
 .Shell__sidebar {
-    background-color: hsla(25, 0%, 100%, 1);
-    border-left: 1px solid hsl(0, 0%, 0%);
-    border-right: 1px solid hsl(0, 0%, 0%);
+    background-color: hsla(25, 80%, 50%, 0.95);
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    min-width: 250px;
     max-width: 250px;
     height: 100vh;
+    position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-
-    /* box-shadow: 2px 2px 10px 1px hsl(0, 0%, 30%); */
+    box-shadow: 1px 0 2px 3px hsl(0, 0%, 40%);
 }
 
 .Shell__header {
@@ -45,35 +43,38 @@
 /* Picture of face. */
 .Shell__header img {
     margin: 80px auto 30px;
-    border: 3px solid black;
+    border: 2px solid hsl(25, 50%, 40%);
     border-radius: 50%;
-    width: 200px;
+    width: 150px;
 }
 
 /* Link to home page. */
 .Shell__header a {
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
-    font-size: 40px;
-    text-shadow: 2px 1px 1px #333;
+    font-size: 45px;
+    text-shadow: 1px 1px 1px #000;
     margin: 0 auto;
 }
 
 .Shell__header a,
 .Shell__header a:visited {
-    color: hsl(25, 100%, 45%);
+    color: hsl(25, 38%, 85%);
 }
 
 .Shell__header a:hover {
-    color: hsl(25, 100%, 55%);
+    color: hsl(270, 50%, 20%);
 }
 
 /* Slogan thing? */
 .Shell__sidebar p {
+    color: hsl(250, 50%, 20%);
+    margin: 20px auto;
     text-align: center;
     font-size: 20px;
+    padding: 0 20px;
+    font-family: 'Lato', sans-serif;
     font-style: italic;
-    margin: 20px auto;
 }
 
 .Shell__nav {
@@ -82,35 +83,34 @@
     font-weight: bold;
 }
 
-.Shell__nav a {
+.Shell__nav a,
+.Shell__nav a:visited {
     /* border: solid 1px red; */
-    padding: 2px;
+    padding: 0 5px;
     background-color: default;
-    margin: 0 5px;
-    transition: background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+    margin: 12px 5px 0;
+    transition: color 1s ease;
+
+    /* background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s; */
 
     /* text-decoration-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s, */
 
     /* border-bottom-color ease-in-out 0.25s; */
-    transition-duration: 1s, 10s;
-    transition-property: background-color;
+    transition-duration: 1s;
+    transition-property: color;
     font-family: 'Oxygen', sans-serif;
-    font-size: 20px;
-    text-shadow: 1px 1px 1px #ccc;
+    font-size: 27px;
+    text-shadow: 2px 2px 1px #555;
+    color: hsl(270, 100%, 100%);
 }
 
 .Shell__nav a:hover {
     /* background-color: #c5c5c5; */
-    background-color: hsla(25, 100%, 50%, 0.3);
-}
-
-.Shell__title a,
-.Shell__nav a,
-.Shell__title a:visited,
-.Shell__nav a:visited,
-.Shell__title a:hover,
-.Shell__nav a:hover {
-    color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-shadow: 0 0 0 #770;
+    position: relative;
+    top: 2px;
+    left: 2px;
 }
 
 .Shell__icons {

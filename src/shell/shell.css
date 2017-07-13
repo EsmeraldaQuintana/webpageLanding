@@ -120,12 +120,14 @@
     justify-content: center;
 }
 
-.Shell__icons a {
-    padding: 5px;
+.Shell__icons .fa {
+    padding: 0 5px;
+    font-size: 32px;
+    color: hsl(25, 5%, 30%);
 }
 
-.Shell__icons a img {
-    height: 32px;
+.fa:hover {
+    color: hsl(20, 60%, 50%);
 }
 
 /* RESPONSIVE DESIGN below */

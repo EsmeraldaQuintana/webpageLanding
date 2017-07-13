@@ -1,2 +1,17 @@
 .Home {
+    padding: 0;
+    margin: 0;
+}
+
+.Home__welcome {
+    background-color: hsl(25, 100%, 50%);
+    width: 70vw;
+    height: 70vh;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.Home__welcome h1 {
+    padding: 0;
+    margin: 0;
 }

@@ -41,5 +41,5 @@ a {
 }
 
 .solid {
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsla(50, 50%, 90%, 0);
 }

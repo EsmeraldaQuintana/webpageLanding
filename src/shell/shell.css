@@ -1,14 +1,13 @@
 
 .Shell {
-    background-color: hsla(0, 0%, 100%, 1);
-    min-width: 100vw;
+    min-width: 100%;
     padding: 0;
     margin: 0;
     height: auto;
 }
 
 .Shell__contents {
-    /* border: 1px solid hsl(0, 50%, 50%); */
+    background-color: hsla(0, 0%, 100%, 1);
     min-width: 1000px;
     max-width: calc(90vw - 280px);
     min-height: 100vh;
@@ -21,18 +20,17 @@
 
 .Shell__sidebar {
     background-color: hsla(25, 80%, 50%, 0.95);
+    box-shadow: 1px 0 2px 3px hsl(0, 0%, 40%);
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-width: 250px;
-    max-width: 250px;
+    width: 250px;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
-    box-shadow: 1px 0 2px 3px hsl(0, 0%, 40%);
+    display: flex;
+    flex-direction: column;
 }
 
 .Shell__header {
@@ -53,17 +51,18 @@
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     font-size: 45px;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 3px hsl(0, 0%, 10%);
     margin: 0 auto;
 }
 
 .Shell__header a,
 .Shell__header a:visited {
-    color: hsl(25, 38%, 85%);
+    color: hsl(25, 38%, 90%);
 }
 
 .Shell__header a:hover {
-    color: hsl(270, 50%, 20%);
+    color: hsl(15, 100%, 50%);
+    text-shadow: 1px 1px 3px hsl(0, 0%, 10%);
 }
 
 /* Slogan thing? */
@@ -89,45 +88,47 @@
     padding: 0 5px;
     background-color: default;
     margin: 12px 5px 0;
-    transition: color 1s ease;
+    transition: color 0.2s ease;
 
     /* background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s; */
 
     /* text-decoration-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s, */
 
     /* border-bottom-color ease-in-out 0.25s; */
-    transition-duration: 1s;
+    transition-duration: 0.2s;
     transition-property: color;
     font-family: 'Oxygen', sans-serif;
     font-size: 27px;
     text-shadow: 2px 2px 1px #555;
-    color: hsl(270, 100%, 100%);
+    color: hsl(25, 80%, 95%);
 }
 
 .Shell__nav a:hover {
-    /* background-color: #c5c5c5; */
-    color: hsl(0, 0%, 100%);
-    text-shadow: 0 0 0 #770;
+    color: hsla(215, 100%, 30%, 1);
+    text-shadow: 0 0 0 #000;
     position: relative;
     top: 2px;
     left: 2px;
 }
 
 .Shell__icons {
-    margin: 80px auto;
+    flex-grow: 1;
+    margin: 0 auto 40px;
+    padding: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
 .Shell__icons .fa {
     padding: 0 5px;
     font-size: 32px;
-    color: hsl(25, 5%, 30%);
+    color: hsl(215, 100%, 0%);
 }
 
 .fa:hover {
-    color: hsl(20, 60%, 50%);
+    color: hsla(245, 100%, 100%, 0.7);
+    font-size: 44px;
 }
 
 /* RESPONSIVE DESIGN below */

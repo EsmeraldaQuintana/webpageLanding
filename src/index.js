@@ -17,8 +17,8 @@ about.setContainer(shellRoot);
 blog.setContainer(shellRoot);
 
 page('/', home.render);
-page('/about', about.render);
-page('/blog', blog.render);
+page('./about', about.render);
+page('./blog', blog.render);
 page('*', home.render);
 // start router
 page.start();

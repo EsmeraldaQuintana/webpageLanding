@@ -16,7 +16,7 @@ home.setContainer(shellRoot);
 about.setContainer(shellRoot);
 blog.setContainer(shellRoot);
 
-page.base("/webpageLanding");
+page.base('/webpageLanding');
 
 page('/', home.render);
 page('/about', about.render);

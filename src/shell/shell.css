@@ -23,8 +23,7 @@
 
 .Shell__contents {
     background-color: hsla(0, 0%, 100%, 1);
-    min-width: calc(100% - 250px);
-    max-width: calc(90vw - 280px);
+    max-width: calc(100% - 250px);
     min-height: 100vh;
     height: auto;
     margin: 0;
@@ -165,8 +164,14 @@
 }
 
 /* Fix Shell_contents to adjust to smaller width */
-@media (max-width: 1600px) {
+@media (min-width: 800px) {
+    .Shell__contents {
+        max-width: 500px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
 
+    }
 }
 
 /* Fix Shell_contents to adjust to even smaller width */

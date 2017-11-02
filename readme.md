@@ -16,11 +16,11 @@ $ npm start
   and in a separate terminal:
 $ git checkout branchName
 ```
-####To do
+#### To do
 + build blog with hexa.io
 + convert homepage to blog archive
 + add content
 
-####Acknowledgements:
+#### Acknowledgements:
 Used [jgallen23/routie](https://github.com/jgallen23/routie) v0.3
 Used Font Awesome v4.7

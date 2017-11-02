@@ -26,5 +26,4 @@ page('*', home.render);
 // start router
 page.start({
     hashbang: true,
-    dispatch: false,
 });

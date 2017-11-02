@@ -1,6 +1,6 @@
 import './main.css';
 
-import page from 'page';
+import routie from './scripts/routie';
 import shell from './shell';
 import home from './home';
 import about from './about';
@@ -16,14 +16,7 @@ home.setContainer(shellRoot);
 about.setContainer(shellRoot);
 blog.setContainer(shellRoot);
 
-page.base('/webpageLanding');
-
-page('/', home.render);
-page('/about', about.render);
-page('/blog', blog.render);
-page('*', home.render);
-
-// start router
-page.start({
-    hashbang: true,
-});
+routie('about', about.render);
+routie('/blog', blog.render);
+routie('*', home.render);
+routie('/', home.render);

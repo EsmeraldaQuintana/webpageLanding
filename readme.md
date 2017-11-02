@@ -13,9 +13,11 @@ To see altenative layouts:
 ```
 $ npm i
 $ npm start
-  and in a separate terminal:
+> open localhost:8080 in a browser
+> and in a separate terminal:
 $ git checkout branchName
 ```
+
 #### To do
 + build blog with hexa.io
 + convert homepage to blog archive

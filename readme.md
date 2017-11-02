@@ -35,8 +35,8 @@ Used Font Awesome v4.7
 #root               // container for Shell
   Shell             // container for all HTML pages
     Shell__sidebar
-      header        // picture and home link
-      nav           // site pages
+      header        // picture, home
+      nav           // pages
       icons         // social
     Shell__contents // HTML pages are rendered here
 ```

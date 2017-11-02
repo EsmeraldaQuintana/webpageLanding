@@ -9,7 +9,9 @@ There are X alternative layouts for this website, saved as branches.
 + centeredLayout
 
 To play with them:
+```
 $ npm i
 $ npm start
   and in a separate terminal:
 $ git checkout branchName
+```

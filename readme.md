@@ -44,6 +44,6 @@ $ git checkout branchName
 #### Acknowledgements:
 Used [jgallen23/routie](https://github.com/jgallen23/routie) v0.3
 
-Used Tempurturtul/web-template https://github.com/Tempurturtul/web-template/commit/60c2189fb55c244bcc490b467599a23570d99bd9
+Used Tempurturtul/web-template [60c2189](https://github.com/Tempurturtul/web-template/commit/60c2189fb55c244bcc490b467599a23570d99bd9)
 
 Used Font Awesome v4.7

@@ -26,7 +26,7 @@ $ git checkout branchName
 + build blog with hexa.io
 + convert homepage to blog archive
 + add content
-+ remove #root in put shell right in body
++ remove #root
 
 
 #### HTML Structure
@@ -43,5 +43,7 @@ $ git checkout branchName
 
 #### Acknowledgements:
 Used [jgallen23/routie](https://github.com/jgallen23/routie) v0.3
+
+Used Tempurturtul/web-template https://github.com/Tempurturtul/web-template/commit/60c2189fb55c244bcc490b467599a23570d99bd9
 
 Used Font Awesome v4.7

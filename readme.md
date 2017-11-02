@@ -1,6 +1,6 @@
 # My personal webpage...
 
-Built with
+**Built with**
 + ECMAScript v6
 + node v6.11
 
@@ -9,7 +9,7 @@ There are 3 alternative layouts for this website, saved as branches.
 + slimWideHeader
 + centeredLayout
 
-To play with them:
+To see altenative layouts:
 ```
 $ npm i
 $ npm start

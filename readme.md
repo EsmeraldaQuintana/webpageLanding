@@ -22,8 +22,21 @@ $ git checkout branchName
 + build blog with hexa.io
 + convert homepage to blog archive
 + add content
++ remove #root in put shell right in body
 
 #### Acknowledgements:
 Used [jgallen23/routie](https://github.com/jgallen23/routie) v0.3
 
 Used Font Awesome v4.7
+
+
+#### HTML Structure
+```
+#root               // container for Shell
+  Shell             // container for all HTML pages
+    Shell__sidebar
+      header        // picture and home link
+      nav           // site pages
+      icons         // social
+    Shell__contents // HTML pages are rendered here
+```

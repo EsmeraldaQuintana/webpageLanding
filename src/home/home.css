@@ -4,7 +4,7 @@
 }
 
 .Home__welcome {
-    background-color: hsl(25, 100%, 50%);
+    background-color: hsla(25, 100%, 50%, 0.2);
     width: 70vw;
     height: 70vh;
     padding: 0;

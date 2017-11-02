@@ -6,18 +6,6 @@
     height: auto;
 }
 
-.Shell__contents {
-    background-color: hsla(0, 0%, 100%, 1);
-    min-width: 1000px;
-    max-width: calc(90vw - 280px);
-    min-height: 100vh;
-    height: auto;
-    margin: 0;
-    padding: 50px 50px 0 60px;
-    position: relative;
-    left: 250px;
-}
-
 .Shell__sidebar {
     background-color: hsla(26, 80%, 50%, 0.95);
     box-shadow: 1px 0 2px 3px hsl(0, 0%, 40%);
@@ -31,6 +19,18 @@
     bottom: 0;
     display: flex;
     flex-direction: column;
+}
+
+.Shell__contents {
+    background-color: hsla(0, 0%, 100%, 1);
+    min-width: calc(100% - 250px);
+    max-width: calc(90vw - 280px);
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    padding: 50px 50px 0 60px;
+    position: relative;
+    left: 250px;
 }
 
 .Shell__header {

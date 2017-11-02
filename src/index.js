@@ -22,5 +22,9 @@ page('/', home.render);
 page('/about', about.render);
 page('/blog', blog.render);
 page('*', home.render);
+
 // start router
-page.start();
+page.start({
+    hashbang: true,
+    dispatch: false,
+});
